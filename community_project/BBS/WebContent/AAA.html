@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>회원가입</title>
+  
+</head>
+<body>
+   
+<form onsubmit="return checkz()" method="post" action="mailto:szx0228@naver.com" enctype="text/plain" > 
+<h2 align="center">회원가입</h2>
+ 
+   <table align="center" border="3" cellspacing="0"  >
+       <tr>
+          <td colspan="5" height="30" align="center" bgcolor=#000000" span style="color:white;">회원기본정보</td>
+          
+        </tr>
+        <tr> 
+          <td align="left">아이디:</td>
+          <td colspan="4"><input type="text" name="id" maxlength="12" id="tbID" > 4~12자리의 영문 대소문자와 숫자로만 입력</td>
+       </tr>
+    
+       <tr>
+          <td >비밀번호:</td>
+           <td colspan="4"><input type="password" maxlength="12" id="tbPwd" > 4~12자리의 영문 대소문자와 숫자로만 입력</td>
+       </tr>
+       <tr>
+          <td >비밀번호확인:</td>
+           <td colspan="5"><input type="password" id="cpass" maxlength="12"></td>
+           
+       </tr>
+       
+        <tr>
+          <td>메일주소:</td>
+          <td colspan="4"><input type="text" name="addr" id="mail">
+          예)id@domain.com</td>
+       </tr>
+       <tr>
+          <td>이름:</td>
+          <td colspan="3"><input type="text" name="nam" id="name"></td>
+        </tr>
+       <tr>
+          <td colspan="5" height="30" align="center" bgcolor=#000000" span style="color:white;">개인신상정보</td>
+        </tr>
+        
+        <tr>
+          <td>주민등록번호:</td>
+          <td colspan="4"><input type="text" name="jum" id="pnum">-<input type="password" name="jumin" id="nnum">예)123456789</td>
+       </tr>
+ 
+       <tr>
+          <td >생일:</td>
+          <td>
+            <input type="text" autocomplete="OFF" name="nyear" id="year" style="width: 70px" readonly  disabled> 년
+          <input type="text" autocomplete="OFF" name="nmonth" id="month" style="width: 50px" readonly  disabled> 월
+            <input type="text" autocomplete="OFF" name="nday" id="day" style="width: 50px" readonly  disabled> 일
+    </tr>
+ 
+    <tr>
+      <td>관심분야:</td>
+      <td colspan="3"><input type="checkbox" name="hobby[]" value="컴퓨터" >컴퓨터
+          <input type="checkbox" name="hobby[]" value="인터넷" >인터넷
+         <input type="checkbox" name="hobby[]" value="여행">여행
+         <input type="checkbox" name="hobby[]" value="영화감상">영화감상
+         <input type="checkbox" name="hobby[]" value="음악감상">음악감상
+      </td>
+    </tr>
+ 
+       <tr>
+          <td width="20" height="100">자기소개:</td>
+          <td colspan="3"><textarea name="my_intro" id="intro" cols="50" rows="5"></textarea></td>
+       </tr>
+    
+ 
+</table>
+ 
+<p align="center">
+        <input type="submit" value="회원가입">
+         <input type="reset" value="다시입력">
+  </p>
+ 
+   </form>
+</body>
+ 
+ 
+</html>
